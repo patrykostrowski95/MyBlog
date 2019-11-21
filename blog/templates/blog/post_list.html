@@ -1,0 +1,28 @@
+{% extends "blog/base.html" %}
+{% load staticfiles %}
+{% load static %}
+{% block content %}
+<h1 class="main-header">Jebac to gowno</h1>
+{% for post in post_list %}
+
+        <div class="row align-items-center justify-content-between post-home">
+            <div class="col-8 text-col">
+                <div class="post">
+                    <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+                </div>
+                <div class="post-text">
+                    {{ post.text }}
+                </div>
+                <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.approve_comments.count }}</a>
+            </div>
+            {% if post.image %}
+            <div class="col-3">
+                <img src="{{ post.image.url }}" class=".img-fluid img-thumbnail" width="400px">
+            </div>
+            {% endif %}
+        </div>
+        <hr class="my-4">
+
+{% endfor %}
+
+{% endblock %}
