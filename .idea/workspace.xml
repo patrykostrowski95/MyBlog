@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4e97bf7-2954-4e91-963a-4eb793ecdea1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a4e97bf7-2954-4e91-963a-4eb793ecdea1" name="Default Changelist" comment="" />
     <ignored path="C:\Users\Patryk\Desktop\School\Python\MyBlog\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,16 +28,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/static/css/blog.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-356">
+            <state relative-caret-position="320">
               <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyBlog/static/css/blog.css">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -323,6 +321,7 @@
       <workItem from="1574544880867" duration="234000" />
       <workItem from="1574545130557" duration="632000" />
       <workItem from="1574546570598" duration="164000" />
+      <workItem from="1574603340096" duration="537000" />
     </task>
     <task id="LOCAL-00001" summary="patryk">
       <created>1574544079327</created>
@@ -373,16 +372,23 @@
       <option name="project" value="LOCAL" />
       <updated>1574546621792</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="patryk">
+      <created>1574603367400</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1574603367400</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16497000" />
+    <option name="totallyTimeSpent" value="17034000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="204" y="96" width="1497" height="920" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17536534" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17745303" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -395,7 +401,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49956483" weight="0.32964602" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4986945" visible="true" weight="0.30622616" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4986945" visible="true" weight="0.30495554" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32932165" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50130546" side_tool="true" weight="0.4159292" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -581,15 +587,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/static/css/blog.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/blog/static/css/blog.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-356">
+        <state relative-caret-position="320">
           <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyBlog/static/css/blog.css">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
