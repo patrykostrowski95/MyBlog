@@ -1,0 +1,56 @@
+.profile-pic {
+    padding: 20px;
+    border-radius: 30%;
+    border-style: solid;
+    border-color: white;
+    width: 90%;
+    height: auto;
+}
+body {
+    background-size:cover;
+    font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+}
+
+.footer-main{
+    position: absolute;
+    padding:20px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color:black;
+}
+
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+li {
+      float: none;
+      display: inline-block;
+    }
+
+.n-link{
+    font-size: 23px;
+    height: 46px;
+    width:240px;
+    
+}
+.n-link-border{
+    font-size: 23px;
+    border-left: 2px solid rgb(177, 173, 173);
+    border-right: 2px solid rgb(177, 173, 173);
+    height: 46px;
+    width:240px;
+    
+}
+a{
+    color:white;
+    font-weight: bold;
+}
+
+.main-header{
+    color:red;
+}
+
+
