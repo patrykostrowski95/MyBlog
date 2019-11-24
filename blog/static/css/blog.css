@@ -54,4 +54,9 @@ a{
     color:blue;
 }
 
+.footer {
+    position: absolute;
+    top: 80px;
+}
+
 
