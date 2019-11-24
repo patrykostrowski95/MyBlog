@@ -28,12 +28,13 @@ body {
 li {
       float: none;
       display: inline-block;
-    }
+}
 
 .n-link{
     font-size: 23px;
     height: 46px;
     width:240px;
+    color: black;
     
 }
 .n-link-border{
