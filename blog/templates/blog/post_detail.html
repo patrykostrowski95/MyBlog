@@ -31,7 +31,8 @@
     <a class='btn btn-primary btn-comment' href="{% url 'add_comment_to_post' pk=post.pk %}">Add Comment</a>
     <div class="container">
         {% for comment in post.comments.all %}
-        <br>
+        <div class="comment-box">
+            <br>
             {% if user.is_authenticated or comment.approved_comment %}
                 {{ comment.created_date }}
                 {% if not comment.approved_comment %}
@@ -49,7 +50,7 @@
             {% endif %}
             {% empty %}
             <p>No Comments</p>
-
+        </div>
         {% endfor %}
     </div>
 </div>
