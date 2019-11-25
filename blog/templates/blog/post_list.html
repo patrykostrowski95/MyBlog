@@ -2,29 +2,46 @@
 {% load staticfiles %}
 {% load static %}
 {% block content %}
-<h1 class="main-header">My Blog</h1>
+    <hr class="my-4">
 {% for post in post_list %}
-
-        <div class="row align-items-center justify-content-between post-home">
-            <div class="col-8 text-col">
-                <div class="post">
-                    <h1><a class="post-link" href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-                </div>
-                <div>
-                    {{ post.published_date }}
-                </div>
-                <div class="post-text">
+    <div class="post-row">
+        <div class="row align-items-center justify-content-center">
+            <div class="col align-self-center">
+                <h1 align="center"><a class="post-link" href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+            </div>
+        </div>
+        <div class="row align-items-center justify-content-center">
+            <div class="col align-self-center">
+                <h4 align="center">{{ post.published_date }}</h4>
+            </div>
+        </div>
+        <br>
+        <div class="row align-items-start">
+            <div class="col-9 align-self-start">
+                <div class="post-text ">
                     {{ post.text }}
                 </div>
                 <a class="post-link" href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.approve_comments.count }}</a>
             </div>
+            <div class="col-3 align-self-start">
             {% if post.image %}
-            <div class="col-3">
-                <img src="{{ post.image.url }}" class=".img-fluid img-thumbnail" width="400px">
-            </div>
+                <div class="post-pic">
+                    <img src="{{ post.image.url }}" class=".img-fluid img-thumbnail" >
+                </div>
+            {% else %}
+                <div class="post-pic">
+                    <img src=" {% static 'media/greyblank.jpg' %}" class=".img-fluid img-thumbnail" alt="image">
+                </div>
             {% endif %}
+            </div>
         </div>
+
+
+        </div>
+
         <hr class="my-4">
+    </div>
+
 
 {% endfor %}
 
