@@ -4,7 +4,20 @@
 
 {% block content %}
 <div class="container-fluid post-det-container">
+    <br>
     <h1 class="header-post" align="center">You were successfully logged out !</h1>
+    <br>
+    <h1 class="header-logout" align="center">What would you like to do now?</h1>
+    <br>
+    <div class="row justify-content-around align-items-center">
+        <div class="col-6 align-self-center" align="center">
+            <a class="btn btn-lg btn-secondary" href="{% url 'post_list' %}">Return to homepage</a>
+        </div>
+        <div class="col-6 align-self-center" align="center">
+            <a class="btn btn-lg btn-secondary" href="{% url 'login' %}">Log back in</a>
+        </div>
+    </div>
+    <br>
 </div>
 
 {% endblock %}

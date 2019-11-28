@@ -54,7 +54,7 @@
     <br>
         {% for comment in post.comments.all %}
 
-            {% if comment.approved_comment or user.is_authenticated %}
+            {% if comment.approved_comment %}
                 <div class="comment-box">
                     <div class="comment-top">
                         <pre>  Posted By: {{ comment.author }}      Date Posted: {{ comment.created_date }} </pre>

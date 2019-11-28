@@ -14,9 +14,16 @@
 
     {% if user.is_authenticated %}
         <div class="row align-items-center justify-content-center">
-            <a class="btn btn-lg btn-secondary" href="{% url 'post_new' %}">
+            <div class="col-1" align="center">
+                <a class="btn btn-lg btn-secondary" href="{% url 'post_new' %}">
                 Add New Post
-            </a>
+                </a>
+            </div>
+            <div class="col-1" align="center">
+                <a class="btn btn-lg btn-secondary" href="{% url 'post_draft_list' %}">
+                Post Draft List
+                </a>
+            </div>
         </div>
         <br>
     {% else %}
