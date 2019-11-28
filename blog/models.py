@@ -13,8 +13,10 @@ class Post(models.Model):
     video = models.FileField(upload_to='media/', blank=True, null=True)
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
+    published_post = models.BooleanField(default=False)
 
     def publish(self):
+        self.published_post = True
         self.published_date = timezone.now()
         self.save()
 
@@ -44,3 +46,4 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.text
+

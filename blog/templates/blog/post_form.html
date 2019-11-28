@@ -1,12 +1,19 @@
 {% extends "blog/base.html" %}
 {% block content %}
-<div class="pages">
-    <h1>New Post</h1>
-    <form class="post-form" method="POST" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Save</button>
-    </form>
-</div>
-    <script>var editor = new MediumEditor('.editable');</script>
+    {% if user.is_authenticated %}
+        <div class="container-fluid">
+            <div class="comment-form-box">
+            <h1 align="center" class="header-post">New Post/Edit Post</h1>
+                <div class="comment-form-text">
+                    <form class="post-form" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="save btn btn-lg btn-secondary">Save</button>
+                    </form>
+                    <br>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
 {% endblock %}

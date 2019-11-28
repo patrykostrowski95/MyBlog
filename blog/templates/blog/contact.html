@@ -1,0 +1,53 @@
+{% extends "blog/base.html" %}
+{% load staticfiles %}
+{% load static %}
+
+{% block content %}
+    <div class="container-fluid post-det-container">
+        <h1 class="header-post" align="center">My Contact Information</h1>
+        <br>
+        <ul style="list-style-type:none;">
+            <li>
+                <div class="container-fluid">
+                    <div class="row justify-content-between">
+                        <div class="col-3 align-self-center">
+                            <i class="fa fa-mobile-phone" style="font-size:90px;"></i>
+                        </div>
+                        <div class="col-9 align-self-center">
+                            <pre><b>    777-888-9999</b></pre>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <br>
+            <br>
+            <li>
+                <div class="container-fluid">
+                    <div class="row justify-content-between">
+                        <div class="col-4 align-self-center">
+                            <i class="fa fa-envelope" style="font-size:60px;"></i>
+                        </div>
+                        <div class="col-8 align-self-center">
+                            <pre><b>myemail@address.com</b></pre>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <br>
+            <br>
+            <li>
+                <div class="container-fluid">
+                    <div class="row justify-content-between">
+                        <div class="col-4 align-self-center">
+                            <i class="fa fa-home" style="font-size:60px"></i>
+                        </div>
+                        <div class="col-8 align-self-center">
+                            <pre><b>9000 S. Main Street, <br>Town, State, 66333</b></pre>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <hr>
+    </div>
+{% endblock %}

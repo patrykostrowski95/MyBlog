@@ -6,7 +6,7 @@ from django.urls import reverse_lazy
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import (TemplateView, ListView, DetailView, CreateView, UpdateView, DeleteView)
-
+from django.contrib.auth import logout
 
 # POST VIEWS
 
@@ -23,14 +23,14 @@ class PostDetailView(DetailView):
 
 
 class CreatePostView(LoginRequiredMixin, CreateView):
-    login_url = '/registration/'
+    login_url = '/login/'
     redirect_field_name = 'blog/post_detail.html'
     form_class = PostForm
     model = Post
 
 
 class PostUpdateView(LoginRequiredMixin, UpdateView):
-    login_url = '/registration/'
+    login_url = '/login/'
     redirect_field_name = 'blog/post_detail.html'
     form_class = PostForm
     model = Post
@@ -42,12 +42,27 @@ class PostDeleteView(LoginRequiredMixin, DeleteView):
 
 
 class DraftListView(LoginRequiredMixin, ListView):
-    login_url = '/registration/'
+    login_url = '/login/'
     redirect_field_name = 'blog/post_draft_list.html'
     model = Post
 
     def get_queryset(self):
         return Post.objects.filter(published_date__isnull=True).order_by('created_date')
+
+#TEMPLATE VIEWS
+
+class AboutView(TemplateView):
+    template_name = 'blog/about.html'
+
+class ContactView(TemplateView):
+    template_name = 'blog/contact.html'
+
+class LoginView(TemplateView):
+    template_name = 'registration/login.html'
+
+class LogoutView(TemplateView):
+    template_name = 'registration/logout.html'
+
 
 
 # COMMENT VIEWS
@@ -87,3 +102,8 @@ def comment_remove(request, pk):
     post_pk = comment.post.pk
     comment.delete()
     return redirect('post_detail', pk=post_pk)
+
+
+def logout_view(request):
+    logout(request)
+

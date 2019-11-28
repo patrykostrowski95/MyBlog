@@ -12,4 +12,7 @@ urlpatterns = [
     url(r'^comment/(?P<pk>\d+)/approve/$', views.comment_approve, name='comment_approve'),
     url(r'^comment/(?P<pk>\d+)/remove/$', views.comment_remove, name='comment_remove'),
     url(r'^post/(?P<pk>\d+)/publish/$', views.post_publish, name='post_publish'),
+    url(r'^about/$', views.AboutView.as_view(), name='about'),
+    url(r'^contact/$', views.ContactView.as_view(), name='contact'),
+    url(r'^logout/$', views.LogoutView.as_view(), name='logout'),
 ]

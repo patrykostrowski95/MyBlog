@@ -12,7 +12,27 @@ a{
     font-weight: bold;
 }
 
+.header-main{
+    font-size: 75px;
+    color:lightgrey;
+    font-weight: bold;
+    text-align:center;
+}
+
+.header-post {
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+}
+
+.header-com{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
 /* NAVBAR */
+
 .navbar-nav {
     width: 100%;
     text-align: center;
@@ -34,15 +54,32 @@ li {
 
 }
 .n-link-main{
-    font-size: 43px;
-    height: 46px;
+    font-size: 33px;
+    height: auto;
     width:240px;
     color: white;
 }
+
 .n-link-border{
     font-size: 23px;
-    border-left: 2px solid rgb(177, 173, 173);
     border-right: 2px solid rgb(177, 173, 173);
+    border-left: 2px solid rgb(177, 173, 173);
+    height: auto;
+    width:240px;
+
+}
+
+.n-link-border-r{
+    font-size: 23px;
+    border-right: 2px solid rgb(177, 173, 173);
+    height: auto;
+    width:240px;
+
+}
+
+.n-link-border-l{
+    font-size: 23px;
+    border-left: 2px solid rgb(177, 173, 173);
     height: auto;
     width:240px;
 
@@ -63,22 +100,53 @@ li {
 
 /* POST */
 
-.post-row{
+.post-list-container{
     position: relative;
-    left:30px;
+    left:5%;
+    right:5%;
+    width:90%;
+    background-color: whitesmoke;
+    background: rgba(204, 204, 204, 0.8);
+    border: solid white;
+    border-radius: 15px;
+    margin: auto;
+}
 
+.post-list-text{
+    position: absolute;
+    left:20px;
+}
+.post-list-comment{
+
+    bottom:200px;
 }
 
 .post-det-text{
-    width:50%;
+    width:80%;
 }
+.post-det-img{
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+}
+
+.post-det-container{
+    width: 70%;
+    position: relative;
+    background-color: whitesmoke;
+    background: rgba(204, 204, 204, 0.8);
+    border: solid white;
+    border-radius: 15px;
+
+}
+
 .post-link {
     color:black;
 }
 
 .post-pic{
-    max-width:350px;
-    max-height:250px;
+    max-width:400px;
+    max-height:300px;
 }
 .post-pic-det{
     width:50%;
@@ -86,9 +154,42 @@ li {
 
 }
 
+/* COMMENT */
+
 .comment-box{
-    left:50px;
+    position: relative;
+    border: solid grey;
+    border-width: thin;
 }
+
+.comment-top{
+    background-image: linear-gradient(grey, white);
+    border: solid grey;
+    border-width: thin;
+    height: 20%;
+
+}
+
+.comment-txt{
+    background-color: white;
+    height:80%;
+}
+
+.comment-form-box{
+    margin:auto;
+    width: 70%;
+    position: relative;
+    background-color: whitesmoke;
+    background: rgba(204, 204, 204, 0.8);
+    border: solid white;
+    border-radius: 15px;
+}
+
+.comment-form-text{
+    margin:auto;
+    text-align: center;
+}
+
 
 
 
