@@ -2,28 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4e97bf7-2954-4e91-963a-4eb793ecdea1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/static/media/avatar.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBlog/media/media/DrU7MMU.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBlog/media/media/DrU7MMU_7QxaLP2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBlog/media/media/DrU7MMU_XfRKEdP.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBlog/media/media/DrU7MMU_zssYE2n.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBlog/media/media/picture2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBlog/media/media/picture2_YV5Iw1R.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBlog/media/media/picture2_xWKbx3l.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBlog/media/media/picture3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBlog/media/media/picture4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBlog/media/media/picture4_O3DZuOo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBlog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyBlog/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/css/blog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/post_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/post_confirm_delete.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/templates/blog/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/post_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/templates/blog/post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/post_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -279,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574966899816</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="patryk">
+      <created>1574997001023</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1574997001023</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">

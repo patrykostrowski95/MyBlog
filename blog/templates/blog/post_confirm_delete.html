@@ -6,7 +6,8 @@
             <form method="post">
                 {% csrf_token %}
                 <h1 class="header-post">Are you sure you want to delete {{ object }}?</h1>
-                <input type="submit" class="btn btn-danger" value="Confirm">
+                <input type="submit" class="btn btn-lg btn-danger" value="Confirm">
+                <a class="btn btn-lg btn-secondary" href="{% url 'post_detail' pk=post.pk %}">Cancel</a></h1>
             </form>
             <br>
         </div>

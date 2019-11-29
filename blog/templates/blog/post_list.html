@@ -48,7 +48,7 @@
             <div class="row align-items-start justify-content-around">
                 <div class="col-8 align-self-start">
                     <div >
-                        <pre class="text-left">{{ post.text }}</pre>
+                        <pre >{{ post.text }}</pre>
                     </div>
                     <hr>
                     <a class="post-link nav-link" href="{% url 'post_detail' pk=post.pk %}"><h3 class="header-com">Comments: {{ post.approve_comments.count }}</h3></a>
