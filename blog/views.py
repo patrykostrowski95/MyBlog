@@ -49,10 +49,13 @@ class DraftListView(LoginRequiredMixin, ListView):
     def get_queryset(self):
         return Post.objects.filter(published_date__isnull=True).order_by('created_date')
 
-#TEMPLATE VIEWS
 
 class AboutView(TemplateView):
     template_name = 'blog/about.html'
+
+
+#TEMPLATE VIEWS
+
 
 class ContactView(TemplateView):
     template_name = 'blog/contact.html'

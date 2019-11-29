@@ -54,13 +54,15 @@
     <br>
         {% for comment in post.comments.all %}
 
-            {% if comment.approved_comment %}
+            {% if comment.approved_comment or user.is_authenticated %}
                 <div class="comment-box">
                     <div class="comment-top">
                         <pre>  Posted By: {{ comment.author }}      Date Posted: {{ comment.created_date }} </pre>
                     </div>
-                    <div class="comment-txt">
-                        <pre class="comment-txt">  {{ comment.text|safe|linebreaks }}</pre>
+                    <div class="comment-txt-box">
+                        <div class="comment-txt">
+                            <pre>{{ comment.text|safe|linebreaks }}</pre>
+                        </div>
                     </div>
                 </div>
                 {% if not comment.approved_comment or user.is_authenticated %}

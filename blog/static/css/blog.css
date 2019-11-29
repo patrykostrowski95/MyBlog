@@ -42,6 +42,10 @@ a{
     color: white;
 }
 
+.about-image{
+    width:30%;
+}
+
 /* NAVBAR */
 
 .navbar-nav {
@@ -171,6 +175,7 @@ li {
     position: relative;
     border: solid grey;
     border-width: thin;
+    height: 100%;
 }
 
 .comment-top{
@@ -181,9 +186,16 @@ li {
 
 }
 
-.comment-txt{
+.comment-txt-box{
     background-color: white;
     height:80%;
+    left:10px;
+}
+.comment-txt{
+    position:relative;
+    width:98%;
+    left:1%;
+    right:1%;
 }
 
 .comment-form-box{

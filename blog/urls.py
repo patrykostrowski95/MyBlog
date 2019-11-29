@@ -15,4 +15,5 @@ urlpatterns = [
     url(r'^about/$', views.AboutView.as_view(), name='about'),
     url(r'^contact/$', views.ContactView.as_view(), name='contact'),
     url(r'^logout/$', views.LogoutView.as_view(), name='logout'),
+
 ]
