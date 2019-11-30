@@ -33,7 +33,7 @@
         <br>
     {% endif %}
 
-    <div class="row align-items-center justify-content-between gallery-row">
+    <div class="row align-items-center justify-content-start gallery-row">
         {% for post in post_list %}
             {% if post.published_post or user.is_authenticated %}
                 <div class="col-4 gallery-col">

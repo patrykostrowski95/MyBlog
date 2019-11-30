@@ -159,8 +159,10 @@ li {
     position: relative;
     background-color: whitesmoke;
     background: rgba(204, 204, 204, 0.8);
-    border: solid white;
-    border-radius: 15px;
+    border: solid;
+    border-width: thick;
+    border-color: white;
+    border-radius: 5px;
 
 }
 
