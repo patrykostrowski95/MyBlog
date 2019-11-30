@@ -30,51 +30,38 @@
         <br>
     {% endif %}
 
-
-    {% for post in post_list %}
-        {% if post.published_post or user.is_authenticated %}
-        <div class="container-fluid post-list-container img-thumbnail">
-            <div class="row align-items-center justify-content-center">
-                <div class="col align-self-center">
-                    <h1 class="header-post" align="center"><a class="post-link nav-link" href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-center">
-                <div class="col align-self-center">
-                    <h4 align="center">Date Posted: {{ post.published_date }}</h4>
-                </div>
-            </div>
-            <hr>
-            <div class="row align-items-start justify-content-around">
-                <div class="col-8 align-self-start">
-                    <div >
-                        <pre >{{ post.text }}</pre>
+    <div class="row align-items-center justify-content-between gallery-row">
+        {% for post in post_list %}
+            {% if post.published_post or user.is_authenticated %}
+                <div class="col-4 gallery-col">
+                    <div class="container-fluid post-list-container img-thumbnail">
+                        <div class="post-pic">
+                            {% if post.image %}
+                                <img src="{{ post.image.url }}" class="img-fluid" alt="image">
+                            {% else %}
+                                <img src=" {% static 'media/greyblank.jpg' %}" class="img-fluid" alt="image">
+                            {% endif %}
+                        </div>
+                        <div class="row align-items-start justify-content-around">
+                            <div class="col-11 align-self-start">
+                                <br>
+                                <div>
+                                    <pre><a class="post-title navbar-brand" href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a><br>Date Posted: {{ post.published_date }}</pre>
+                                    <pre class="post-text">{{ post.text }}</pre>
+                                </div>
+                                <a class="comment-count navbar-brand" href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.approve_comments.count }}</a>
+                            </div>
+                        </div>
+                        <br>
                     </div>
-                    <hr>
-                    <button type="button" class="btn btn-lg btn-secondary comment-button" href="{% url 'post_detail' pk=post.pk %}">Comments: <span class="badge badge-light comment-button">{{ post.approve_comments.count }}</span></button>
-                </div>
-                <div class="col-3 align-self-start">
-                    {% if post.image %}
-                        <div class="post-pic">
-                            <img src="{{ post.image.url }}" class=".img-fluid img-thumbnail" >
-                        </div>
+                    <br><br><br>
                     {% else %}
-                        <div class="post-pic">
-                            <img src=" {% static 'media/greyblank.jpg' %}" class="img-fluid img-thumbnail" alt="image">
-                        </div>
-                    {% endif %}
+                    <br>
                 </div>
-            </div>
-            <hr>
+            {% endif %}
         </div>
-        <br>
-        <br>
-        <br>
-        {% else %}
-        <br>
-        {% endif %}
     {% endfor %}
-</div>
+    </div>
 
 
 {% endblock %}

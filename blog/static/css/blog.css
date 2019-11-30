@@ -20,7 +20,7 @@ a{
 }
 
 .header-post {
-    font-size: 35px;
+    font-size: 25px;
     color: black;
     font-weight: bold;
 }
@@ -32,7 +32,7 @@ a{
 }
 
 .header-com{
-    font-size: 20px;
+    font-size: 15px;
     color: black;
     font-weight: bold;
 }
@@ -92,6 +92,7 @@ li {
 
 }
 
+
 .n-link-border-l{
     font-size: 23px;
     border-left: 2px solid rgb(177, 173, 173);
@@ -116,24 +117,22 @@ li {
 /* POST */
 
 .post-list-container{
-    position: relative;
-    left:5%;
-    right:5%;
-    width:90%;
+    left:2.5%;
+    right:2.5%;
+    width:95%;
     background-color: whitesmoke;
     background: rgba(204, 204, 204, 0.8);
-    border: solid white;
-    border-radius: 15px;
+    border-width: thick;
+    border-color: white;
     margin: auto;
 }
 
-.post-list-text{
-    position: absolute;
-    left:20px;
+.post-list-row{
+    height:10%;
 }
-.post-list-comment{
 
-    bottom:200px;
+.post-text{
+    font-size:12px;
 }
 
 .post-det-text{
@@ -160,13 +159,21 @@ li {
 }
 
 .post-pic{
-    max-width:400px;
-    max-height:300px;
+    height:100%;
 }
 .post-pic-det{
     width:50%;
     height:30%
 
+}
+
+.post-title{
+    font-size:20px;
+    color:black;
+}
+
+.post-title:hover{
+    color: white;
 }
 
 /* COMMENT */
@@ -213,8 +220,24 @@ li {
     text-align: center;
 }
 
-.comment-button{
+.comment-count{
     font-size: 15px;
+    font-weight: bold;
+}
+
+.comment-count:hover{
+    color:white;
+}
+
+.gallery-row{
+    left:10%;
+    right:10%;
+    width:80%;
+    height: 90%;
+    margin: auto;
+}
+
+.gallery-col{
 }
 
 

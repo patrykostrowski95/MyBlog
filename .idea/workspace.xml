@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4e97bf7-2954-4e91-963a-4eb793ecdea1" name="Default Changelist" comment="patryk">
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/gallery.html" afterDir="false" />
+    <list default="true" id="a4e97bf7-2954-4e91-963a-4eb793ecdea1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyBlog/media/media/4e160e504cf7adb7d892741e60e7e265.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/static/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/css/blog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/media/avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/media/avatar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/gallery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/templates/blog/post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/post_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -270,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574997001023</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="patryk">
+      <created>1575074463092</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1575074463092</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">

@@ -60,11 +60,17 @@ class AboutView(TemplateView):
 class ContactView(TemplateView):
     template_name = 'blog/contact.html'
 
+
 class LoginView(TemplateView):
     template_name = 'registration/login.html'
 
+
 class LogoutView(TemplateView):
     template_name = 'registration/logout.html'
+
+
+class GalleryView(TemplateView):
+    template_name = 'blog/gallery.html'
 
 
 
