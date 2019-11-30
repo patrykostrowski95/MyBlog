@@ -19,6 +19,10 @@ a{
     text-align:center;
 }
 
+.header-main-box{
+    position:relative;
+}
+
 .header-post {
     font-size: 25px;
     color: black;
@@ -138,6 +142,12 @@ li {
 .post-det-text{
     width:80%;
 }
+
+.post-det-header{
+    font-size: 35px;
+    font-weight: bold;
+}
+
 .post-det-img{
     margin: auto;
     padding: 10px;
@@ -158,8 +168,13 @@ li {
     color:black;
 }
 
+.post-pic-box{
+    width:100%;
+    text-align: center;
+}
+
 .post-pic{
-    height:100%;
+    width:100%;
 }
 .post-pic-det{
     width:50%;
@@ -180,16 +195,15 @@ li {
 
 .comment-box{
     position: relative;
-    border: solid grey;
+    border: solid;
     border-width: thin;
     height: 100%;
 }
 
 .comment-top{
-    background-image: linear-gradient(grey, white);
-    border: solid grey;
+    border: solid;
     border-width: thin;
-    height: 20%;
+    height:20%;
 
 }
 

@@ -1,10 +1,10 @@
 {% extends "blog/base.html" %}
 
 {% block content %}
-
+<br>
 <br>
 <div class="container-fluid post-det-container">
-    <h1 class="header-post" align="center">{{ post.title }}</h1>
+    <h1 class="post-det-header" align="center">{{ post.title }}</h1>
     {% if post.published_date %}
         <div class="row align-items-center justify-content-center">
             <div class="col align-self-center">
@@ -56,8 +56,8 @@
 
             {% if comment.approved_comment or user.is_authenticated %}
                 <div class="comment-box">
-                    <div class="comment-top">
-                        <pre>  Posted By: {{ comment.author }}      Date Posted: {{ comment.created_date }} </pre>
+                    <div class="comment-top bg-dark">
+                        <pre style="color: white;">  Posted By: {{ comment.author }}      Date Posted: {{ comment.created_date }} </pre>
                     </div>
                     <div class="comment-txt-box">
                         <div class="comment-txt">

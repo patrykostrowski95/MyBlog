@@ -6,12 +6,15 @@
 {% block content %}
 
 <div class="container-fluid">
-    {% if user.is_authenticated %}
-        <h1 class="header-main">Welcome to the blog {{ user.username }}!</h1>
-    {% else %}
-        <h1 class="header-main">Welcome to the blog!</h1>
-    {% endif %}
-
+    <div class="row bg-dark justify-content-center">
+        {% if user.is_authenticated %}
+            <p class="header-main">Welcome to the blog {{ user.username }}!</p>
+        {% else %}
+            <p class="header-main">Welcome to the blog!</p>
+        {% endif %}
+    </div>
+    <br>
+    <br>
     {% if user.is_authenticated %}
         <div class="row align-items-center justify-content-center">
             <div class="col-1" align="center">
@@ -35,9 +38,9 @@
             {% if post.published_post or user.is_authenticated %}
                 <div class="col-4 gallery-col">
                     <div class="container-fluid post-list-container img-thumbnail">
-                        <div class="post-pic">
+                        <div class="post-pic-box">
                             {% if post.image %}
-                                <img src="{{ post.image.url }}" class="img-fluid" alt="image">
+                                <img src="{{ post.image.url }}" class="post-pic" alt="image">
                             {% else %}
                                 <img src=" {% static 'media/greyblank.jpg' %}" class="img-fluid" alt="image">
                             {% endif %}
