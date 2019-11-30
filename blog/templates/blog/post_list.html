@@ -51,7 +51,7 @@
                         <pre >{{ post.text }}</pre>
                     </div>
                     <hr>
-                    <a class="post-link nav-link" href="{% url 'post_detail' pk=post.pk %}"><h3 class="header-com">Comments: {{ post.approve_comments.count }}</h3></a>
+                    <button type="button" class="btn btn-lg btn-secondary comment-button" href="{% url 'post_detail' pk=post.pk %}">Comments: <span class="badge badge-light comment-button">{{ post.approve_comments.count }}</span></button>
                 </div>
                 <div class="col-3 align-self-start">
                     {% if post.image %}
@@ -65,7 +65,9 @@
                     {% endif %}
                 </div>
             </div>
+            <hr>
         </div>
+        <br>
         <br>
         <br>
         {% else %}

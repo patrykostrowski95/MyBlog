@@ -43,7 +43,7 @@ a{
 }
 
 .about-image{
-    width:30%;
+    width:25%;
 }
 
 /* NAVBAR */
@@ -212,6 +212,11 @@ li {
     margin:auto;
     text-align: center;
 }
+
+.comment-button{
+    font-size: 15px;
+}
+
 
 
 
