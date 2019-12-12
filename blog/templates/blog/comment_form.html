@@ -2,19 +2,16 @@
 {% block content %}
 <br>
 
-<div class="container-fluid">
-    <div class="comment-form-box">
-        <h1 align="center" class="header-post">New Comment</h1>
-        <div class="comment-form-text">
-            <form method="post">
-                {% csrf_token %}
-                {{ form.as_p }}
-                <button type="submit" class="save btn btn-secondary">Post Comment</button>
-                <br>
-                <br>
-            </form>
-        </div>
-
+<div class="container-fluid post-det-container">
+    <h1 align="center" class="header-post">New Comment</h1>
+    <div class="comment-form-text">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="save btn btn-secondary">Post Comment</button>
+            <br>
+            <br>
+        </form>
     </div>
 </div>
 

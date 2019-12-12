@@ -1,12 +1,14 @@
 body {
-    background-size:cover;
+    background-size:100% ;
     font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
 }
 
 html, body {
-    height: 100%;
-    margin: 0;
+    margin: 0px;
+    width:100%;
+
 }
+
 a{
     color:white;
     font-weight: bold;
@@ -48,6 +50,7 @@ a{
 
 .about-image{
     width:25%;
+    margin:auto;
 }
 
 /* NAVBAR */
@@ -108,8 +111,6 @@ li {
 /* FOOTER */
 .wrapper {
     min-height: 100%;
-    /* Equal to height of footer */
-    /* But also accounting for potential margin-bottom of last child */
     margin-bottom: -50px;
     text-align:center;
 }
@@ -121,19 +122,16 @@ li {
 /* POST */
 
 .post-list-container{
-    left:2.5%;
-    right:2.5%;
-    width:95%;
+    left:1%;
+    right:1%;
+    width:98%;
     background-color: whitesmoke;
     background: rgba(204, 204, 204, 0.8);
     border-width: thick;
-    border-color: white;
+    border-color: grey;
     margin: auto;
 }
 
-.post-list-row{
-    height:10%;
-}
 
 .post-text{
     font-size:12px;
@@ -161,7 +159,7 @@ li {
     background: rgba(204, 204, 204, 0.8);
     border: solid;
     border-width: thick;
-    border-color: white;
+    border-color: grey;
     border-radius: 5px;
 
 }
@@ -185,7 +183,7 @@ li {
 }
 
 .post-title{
-    font-size:20px;
+    font-size:25px;
     color:black;
 }
 
@@ -196,29 +194,18 @@ li {
 /* COMMENT */
 
 .comment-box{
-    position: relative;
     border: solid;
     border-width: thin;
-    height: 100%;
 }
 
 .comment-top{
     border: solid;
     border-width: thin;
-    height:20%;
-
 }
 
-.comment-txt-box{
-    background-color: white;
-    height:80%;
-    left:10px;
-}
-.comment-txt{
-    position:relative;
-    width:98%;
-    left:1%;
-    right:1%;
+.comment-bottom{
+    border: solid;
+    border-width: thin;
 }
 
 .comment-form-box{
@@ -246,14 +233,14 @@ li {
 }
 
 .gallery-row{
-    left:10%;
-    right:10%;
-    width:80%;
-    height: 90%;
+    left:5%;
+    right:5%;
+    width:90%;
     margin: auto;
 }
 
 .gallery-col{
+
 }
 
 

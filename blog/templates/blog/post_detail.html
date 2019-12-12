@@ -59,10 +59,8 @@
                     <div class="comment-top bg-dark">
                         <pre style="color: white;">  Posted By: {{ comment.author }}      Date Posted: {{ comment.created_date }} </pre>
                     </div>
-                    <div class="comment-txt-box">
-                        <div class="comment-txt">
-                            <pre>{{ comment.text|safe|linebreaks }}</pre>
-                        </div>
+                    <div class="comment-bottom bg-light">
+                        <pre>{{ comment.text|safe|linebreaks }}</pre>
                     </div>
                 </div>
                 {% if not comment.approved_comment or user.is_authenticated %}
