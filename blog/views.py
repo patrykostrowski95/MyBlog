@@ -1,12 +1,57 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from blog.models import Post, Comment
-from .forms import PostForm, CommentForm
+from .forms import PostForm, CommentForm, UserForm, UserProfileInfoForm
 from django.utils import timezone
 from django.urls import reverse_lazy
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import (TemplateView, ListView, DetailView, CreateView, UpdateView, DeleteView)
 from django.contrib.auth import logout
+
+
+# REGISTRATION
+
+def register(request):
+
+    registered = False
+
+    if request.method == "POST":
+        user_form = UserForm(data=request.POST)
+        profile_form = UserProfileInfoForm(data=request.POST)
+
+        if user_form.is_valid() and profile_form.is_valid():
+            user = user_form.save()
+            user.set_password(user.password)
+            user.save()
+
+            profile = profile_form.save(commit=False)
+            profile.user = user
+
+            if 'profile_pic' in request.FILES:
+                profile.profile_pic = request.FILES['profile_pic']
+
+            profile.save()
+
+            registered = True
+        else:
+            print(user_form.errors, profile_form.errors)
+
+    else:
+        user_form = UserForm()
+        profile_form = UserProfileInfoForm()
+    return render(request, 'registration/registration.html',
+                  {'user_form': user_form,
+                   'profile_form': profile_form,
+                   'registered': registered})
+
+
+class LoginView(TemplateView):
+    template_name = 'registration/login.html'
+
+
+class LogoutView(TemplateView):
+    template_name = 'registration/logout.html'
+
 
 # POST VIEWS
 
@@ -54,24 +99,15 @@ class AboutView(TemplateView):
     template_name = 'blog/about.html'
 
 
-#TEMPLATE VIEWS
+# TEMPLATE VIEWS
 
 
 class ContactView(TemplateView):
     template_name = 'blog/contact.html'
 
 
-class LoginView(TemplateView):
-    template_name = 'registration/login.html'
-
-
-class LogoutView(TemplateView):
-    template_name = 'registration/logout.html'
-
-
 class GalleryView(TemplateView):
     template_name = 'blog/gallery.html'
-
 
 
 # COMMENT VIEWS
@@ -99,8 +135,8 @@ def add_comment_to_post(request, pk):
 
 
 @login_required
-def comment_approve(request,pk):
-    comment = get_object_or_404(Comment,pk=pk)
+def comment_approve(request, pk):
+    comment = get_object_or_404(Comment, pk=pk)
     comment.approve()
     return redirect('post_detail', pk=comment.post.pk)
 
@@ -115,4 +151,3 @@ def comment_remove(request, pk):
 
 def logout_view(request):
     logout(request)
-

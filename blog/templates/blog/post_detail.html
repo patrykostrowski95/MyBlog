@@ -57,10 +57,12 @@
             {% if comment.approved_comment or user.is_authenticated %}
                 <div class="comment-box">
                     <div class="comment-top bg-dark">
-                        <pre style="color: white;">  Posted By: {{ comment.author }}      Date Posted: {{ comment.created_date }} </pre>
+                        <pre style="color: white;"> Posted By: {{ comment.author }}      Date Posted: {{ comment.created_date }} </pre>
                     </div>
                     <div class="comment-bottom bg-light">
-                        <pre>{{ comment.text|safe|linebreaks }}</pre>
+                        <div  class="comment-txt">
+                            <p>{{ comment.text|safe|linebreaks }}</p>
+                        </div>
                     </div>
                 </div>
                 {% if not comment.approved_comment or user.is_authenticated %}
@@ -79,5 +81,6 @@
         <br><br>
     </div>
 </div>
+<br><br>
 
 {% endblock %}

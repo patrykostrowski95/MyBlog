@@ -1,0 +1,26 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block content %}
+
+<br>
+<div class="container-fluid post-det-container">
+    {% if registered %}
+        <h1 class="header-post" align="center">thanks you for registering</h1>
+    {% else %}
+        <h1 class="header-post" align="center">If you wish to join the community and share your comments register here!</h1>
+        <h3 class="header-post" align="center">Please fill out the form:</h3>
+
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ user_form.as_p }}
+            {{ profile_form.as_p }}
+            <input class="btn btn-lg btn-secondary" type="submit" name="" value="Register">
+        </form>
+        <br>
+
+    {% endif %}
+</div>
+
+{% endblock %}

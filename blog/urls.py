@@ -16,5 +16,7 @@ urlpatterns = [
     url(r'^contact/$', views.ContactView.as_view(), name='contact'),
     url(r'^gallery/$', views.GalleryView.as_view(), name='gallery'),
     url(r'^logout/$', views.LogoutView.as_view(), name='logout'),
+    url(r'^login/$', views.LoginView.as_view(), name='login'),
+    url(r'^register/$', views.register, name='register'),
 
 ]
