@@ -1,2 +1,2 @@
 # MyBlog
-This is my example of a blog app !
+This is my example of a blog app, created in Django by me.
